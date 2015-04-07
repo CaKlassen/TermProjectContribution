@@ -1,0 +1,45 @@
+--------------------
+| LOGIC TEAM CHRIS |
+|   contribution   |
+--------------------
+
+Overview:
+=========
+
+Logic Team Chris was responsible for developing the game map in its entirety, as well as deity functionality and abilities.
+
+In addition, the team worked on menu and lobby UI, as well as Game Scene implementation.
+
+
+Team Members:
+=============
+
+Chris Klassen - Team Lead
+Julian Brandrick
+
+
+Game Map (Chris Klassen):
+=========================
+
+The game map work involves all generation, enemy placement, tiling and structures.
+
+The game map is generated completely dynamically, based on the size of the map passed into the constructor and defines for the size of logical blocks in-game.
+
+This dynamic generation involves complicated zoning, division of the map into small segments, and assigning objects to various parts of the game.
+
+The object assignment requires the use of an Enemy Hierarchy, which loads a file with a specialized format, interprets it, and constructs a tree that can be traversed by the programmer in various ways to create unique groups of enemies that are random and often times unpredictable.
+
+
+Deity (Julian Brandrick):
+=========================
+
+
+
+
+UI and GameScene (Chris Klassen):
+=================================
+
+The UI work done involved aligning elements properly for the 300% zoom on each scene, as well as adding moving elements to the lobby for polish.
+
+The GameScene work involved setting up the playable scene for users to interact with.
+
