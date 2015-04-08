@@ -33,8 +33,19 @@ The object assignment requires the use of an Enemy Hierarchy, which loads a file
 Deity (Julian Brandrick):
 =========================
 
+Worked on with Alex Lam and Calvin Rempel.
 
+The Deity work involved ability casting, sending and receiving ability events, displaying a graphic upon ability cast 
+    and removing entities upon death or cooldown.
 
+When an ability is cast everyone has to know about it. The client doing the attacking sends a message to the server, 
+    which then sends a skill event to the client that was hit and a skill notification to all other clients. A skill
+    event tells the affected client how it was affected, what value to change and how much to change it by. A skill
+    notification tells all other clients where the affect took place and what type it was.
+
+Each ability type has a different graphic, a different cooldown and its own onClick. When the onClick is called, it
+    loads its graphic, casts its ability within a radius and removes the graphic after its duration. After the
+    cooldown, the ability can be used again.
 
 UI and GameScene (Chris Klassen):
 =================================
